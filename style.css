@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgb(234, 233, 243), rgb(226, 227, 255));
+    background-repeat: no-repeat;/*que la gradiente no se repita*/
+    background-size: cover;/*que cubra todo el fondo pero hay que decirle cuanto es que es la siguiente propiedad*/
+    height: 100vh;/*visual height = altura visual de la página*/
+}
+
+/*nav- barra de navegacion*/
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;/*alinear verticalmente si la direccion del flex es row*/
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono{
+    height: 50px;
+}
+
+.nombre{
+    font-size: 30px;
+    color: #0174DF;
+    font-family: 'Shadows Into light Two', cursive;
+    font-weight: bold;
+}
+
+.menu, a{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: blueviolet;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.pag_principal{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.perrito{
+    width: 400px;
+}
+
+.texto h1{
+    color: blueviolet;
+}
+
+.texto h2{
+    color: rgb(88, 88, 88);
+    margin-bottom: 15px;
+}
+
+.botones{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.btn{
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.principal{
+    background-color: rgb(249, 187, 79);
+    font-weight: bold;
+}
+
+.secundario{
+    outline: 2px solid blueviolet;
+    outline-offset: -2px;
+}
+
+/*Página Adoptar*/
+
+.adoptar{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.fila{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+/*vamos a volver*/
+
+.tarjeta{
+    display: flex ;
+    flex-direction: column;
+    flex: 1/4;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.img_tarjeta{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.nombre_mascota{
+    text-align: center;
+}
+
+.carita{
+    object-position: 0px 40%;
+}
+
+.columna h2{
+    color: rgb(75, 75, 75);
+    text-align: center;
+}
+
+.titular{
+    color: blueviolet;
+    text-align: center;
+}
